@@ -1,0 +1,182 @@
+/* ------------------
+   Custom Styles
+---------------------- */
+
+html {
+    /* Adding background color */
+    background-color: white;
+    /* -------- Adding font style ---------- */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.nav-link {
+    /* Styling to make text visible and centered */
+    color: black;
+    /* Padding used to generate space around an element's content */
+    padding: 5.5em;
+    border-color: rgb(248, 195, 197);
+    border-style: groove;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+a:link, a:visited {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 221, 170);
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    font-weight: bold;
+}
+
+/* Adding color when hovering over navigation items */
+a:hover, a:active {
+    background-color: rgb(0, 196, 147);
+    color: yellow;
+}
+
+a {
+    background-color: white;
+}
+
+h1, p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-title {
+    color: rgb(233, 85, 0);   
+}
+
+.contact-form-label {
+    font-size: 1em;
+}
+
+button {
+    font-weight: bold;
+    background-color: rgb(255, 234, 142);
+}
+
+/* When moving the mouse over the SEND button, adding a different color */
+button[type=submit]:hover {
+    background-color: rgb(255, 51, 0);
+    color: white;
+}    
+
+/* Styling inputs selecting elements and textareas */
+input[type=text], input[type=email], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+/* Used to get rounded borders */
+    border-radius: 4px;
+/* Making sure that padding and width stays in place */
+    box-sizing: border-box;
+/* Adding a top margin */
+    margin-top: 6px;
+/* Adding a bottom margin */
+    margin-bottom: 16px;
+/* Allows to vertically resize the textarea */
+    resize: vertical
+}
+  
+/* When hovering over the textboxs for name and email, adds a light yellow color */
+input[type=text]:hover {
+    background-color: #f9ffa2;
+}
+
+input[type=email]:hover {
+    background-color: #f9ffa2;
+}
+
+textarea:hover {
+    background-color: #f9ffa2;
+}
+
+.contact {
+    background-color:rgb(245, 238, 198);
+}
+
+.contact p {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+
+footer {
+    background-color: rgb(248, 109, 17);
+    text-align: right;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+/* --------------------
+    Desktop Styles
+----------------------- */
+/* ------- Adding Desktop screen size -------- */
+@media screen and (max-width: 760px){
+body{
+    width: 100%;
+}
+.about-image {
+    padding-left: 2em;
+}
+
+.contact p {
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 1em;
+}
+
+/* Alligning footer text to the right corner */
+footer {
+    background-color: rgb(248, 109, 17);
+    text-align: right;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+}
+
+/* --------------------
+     Mobile Styles
+----------------------- */
+/* ------- Adding Mobile screen size -------- */
+ @media only screen and (max-width: 480px) and (orientation : portrait){
+body {
+    width: 100%;
+}
+
+.nav-link{
+    width: 75%;
+    display: inline-grid;
+    color: #000000;
+    margin-right: 0px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about-image {
+    padding-bottom: 1em;
+}
+
+.about p {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+
+/* Alligning footer text to the center */
+footer {
+    background-color: rgb(248, 109, 17);
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 1em;
+}
+
+footer p {
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 16px;
+}
+ }
