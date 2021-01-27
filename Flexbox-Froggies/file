@@ -54,4 +54,7 @@
 23) flex-direction: column-reverse;
     align-content: center;
     
-24)
+24) flex-wrap: wrap-reverse;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-content: space-between;
