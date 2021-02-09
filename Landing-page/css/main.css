@@ -1,0 +1,168 @@
+/* --------------------------------
+          Custom Styles
+------------------------------------ */
+html {
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url("../fonts/Montserrat-Light.ttf");
+}
+
+body {
+  line-height: 1.5;
+  font-family: mySecondFont;
+}
+
+header img {
+    max-width: 100px;
+    padding-left: 6rem;
+}
+
+main img {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  margin-top: -360px;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: myFirstFont;
+  line-height: normal;
+  color: #333131;
+  padding-left: 6rem;
+  padding-bottom: 0%;
+  display: block;
+  margin-block-end: 0em;
+}
+
+.content-container {
+  background-color:white;
+  width:350px;
+  height:430px;
+  box-shadow:5px 5px 30px grey;  
+  border-radius: 15px;
+  padding: 10px 30px 10px 30px;
+}
+
+@font-face {
+  font-family: myThirdFont;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+h2 {
+  font-size: 30px;
+  font-family: myThirdFont;
+  margin: 0 auto;
+  padding-top: 1rem;
+}
+
+.banner p {
+  padding-left: 6rem;
+  font-size: 1.3rem;
+  line-height: normal;
+  font-weight: bolder;
+}
+
+@font-face {
+  font-family: myFourthFont;
+  src: url("../fonts/Montserrat-Bold.ttf");
+}
+
+form button {
+  font-family: myFourthFont;
+  background-color: #57eeab;
+  border: hidden;
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+form button[type=submit]:hover {
+  background-color: #ff8480;
+}
+
+.content-container p,a {
+  font-size: 10px;
+text-align: center;
+}
+
+.content-container a {
+  color: #ff8480;
+  text-decoration: none;
+}
+
+.checkbox {
+  line-height: 3rem;
+}
+
+form input[type=text], select, textarea {
+  font-family: mySecondFont;
+  background-color: #f0efef;
+  border: hidden;
+  /* Used to get rounded borders */
+  border-radius: 10px;
+  width: 100%;
+    padding: 12px;
+/* Making sure that padding and width stays in place */
+    box-sizing: border-box;
+/* Adding a top margin */
+    margin-top: 6px;
+/* Adding a bottom margin */
+    margin-bottom: 6px;
+/* Allows to vertically resize the textarea */
+    resize: vertical;
+}
+
+  
+/* When hovering over the textboxs for name and email, adds a light blue color */
+form input[type=text]:hover {
+  background-color: #ffe2e2;
+}
+
+p1 {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+footer {
+  background-color: #fffd8c;
+  position: relative;
+}
+
+.attr-list {
+list-style: none;
+display: flex;
+justify-content: flex-end;
+width: 90%;
+}
+
+footer ul li {
+padding-left: 10px;
+padding-right: 10px;
+}
+
+h3 {
+  font-size: 1rem;
+  font-family: myFourthFont;
+  padding-left: 6rem;
+  padding-top: 2rem;
+}
+
+footer p {
+  font-size: 12px;
+  padding-left: 6rem;
+}
