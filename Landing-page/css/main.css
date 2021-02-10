@@ -1,3 +1,52 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
 /* --------------------------------
           Custom Styles
 ------------------------------------ */
@@ -6,6 +55,7 @@ html {
   box-sizing: border-box;
 }
 
+ /* Adding downloaded font - light */
 @font-face {
   font-family: mySecondFont;
   src: url("../fonts/Montserrat-Light.ttf");
@@ -17,18 +67,19 @@ body {
 }
 
 header img {
-    max-width: 100px;
-    padding-left: 6rem;
+  max-width: 100px;
+  /* Adding a gap to the left */
+  padding-left: 6rem;
 }
 
 main img {
-    display: block;
+  display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
-  margin-top: -360px;
 }
 
+ /* Adding downloaded font - bold */
 @font-face {
   font-family: myFirstFont;
   src: url("../fonts/Montserrat-Bold.ttf");
@@ -40,18 +91,9 @@ h1 {
   line-height: normal;
   color: #333131;
   padding-left: 6rem;
+  padding-right: 6rem;
   padding-bottom: 0%;
   display: block;
-  margin-block-end: 0em;
-}
-
-.content-container {
-  background-color:white;
-  width:350px;
-  height:430px;
-  box-shadow:5px 5px 30px grey;  
-  border-radius: 15px;
-  padding: 10px 30px 10px 30px;
 }
 
 @font-face {
@@ -62,12 +104,14 @@ h1 {
 h2 {
   font-size: 30px;
   font-family: myThirdFont;
+  /* Removing margin */
   margin: 0 auto;
   padding-top: 1rem;
 }
 
 .banner p {
   padding-left: 6rem;
+  padding-right: 6rem;
   font-size: 1.3rem;
   line-height: normal;
   font-weight: bolder;
@@ -88,16 +132,19 @@ form button {
   padding-left: 6rem;
   padding-right: 6rem;
   font-size: 20px;
+   /* Aligning text to the center */
   text-align: center;
 }
 
+ /* To change color of button when moving over the button */
 form button[type=submit]:hover {
   background-color: #ff8480;
+  color: white;
 }
 
-.content-container p,a {
-  font-size: 10px;
-text-align: center;
+.content-container form p,a {
+ font-size: 10px;
+ text-align: center;
 }
 
 .content-container a {
@@ -113,56 +160,229 @@ form input[type=text], select, textarea {
   font-family: mySecondFont;
   background-color: #f0efef;
   border: hidden;
-  /* Used to get rounded borders */
+/* Used to get rounded borders */
   border-radius: 10px;
   width: 100%;
-    padding: 12px;
+  padding: 12px;
 /* Making sure that padding and width stays in place */
-    box-sizing: border-box;
+  box-sizing: border-box;
 /* Adding a top margin */
-    margin-top: 6px;
+  margin-top: 6px;
 /* Adding a bottom margin */
-    margin-bottom: 6px;
+  margin-bottom: 6px;
 /* Allows to vertically resize the textarea */
-    resize: vertical;
+  resize: vertical;
 }
 
-  
 /* When hovering over the textboxs for name and email, adds a light blue color */
 form input[type=text]:hover {
   background-color: #ffe2e2;
 }
 
-p1 {
+.content {
   font-size: 1.2rem;
   font-weight: bolder;
+  margin: 0 auto;
 }
 
-footer {
-  background-color: #fffd8c;
-  position: relative;
-}
-
-.attr-list {
-list-style: none;
-display: flex;
-justify-content: flex-end;
-width: 90%;
-}
-
-footer ul li {
-padding-left: 10px;
-padding-right: 10px;
+footer li img {
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: flex-end;
+  padding-left: 10px;
+ padding-right: 10px;
 }
 
 h3 {
   font-size: 1rem;
   font-family: myFourthFont;
-  padding-left: 6rem;
   padding-top: 2rem;
+  margin: 0 auto;
 }
 
 footer p {
   font-size: 12px;
-  padding-left: 6rem;
+  margin: 0 auto;
+  line-height: 2rem;
 }
+
+ /* To change color of button when moving over the button */
+ footer button[type=submit]:hover {
+  background-color:#57eeab;
+  color: black;
+}
+
+  /* --------------------
+      Desktop Styles
+  ----------------------- */
+@media only screen and (min-width: 800px){
+  /* To center background image */
+main img {
+ margin-top: -360px;
+ width: 50%;
+ height: 50%;
+ margin-bottom: 5%;
+}
+
+.attr-list {
+  list-style: none;
+  /* Use of flexbox */
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+  position: relative;
+  bottom: 50px;
+  left: 70rem;
+ }
+
+ .content-container {
+  background-color:white;
+  width:350px;
+  height:430px;
+  box-shadow:5px 5px 30px grey;  
+   /* To curve and make a rounded rectangle */
+  border-radius: 15px;
+  padding: 10px 30px 10px 30px;
+  position: absolute;
+  right: 70px;
+  top: 21%;
+}
+
+#hours {
+  font-family: mySecondFont;
+  font-size: 12px;
+  background-color: white;
+  border: hidden;
+  border-radius: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 1rem;
+  float:left;
+  width: 5%;
+}
+
+#yourcity {
+  font-family: mySecondFont;
+  font-size: 12px;
+  background-color: white;
+  border: hidden;
+  border-radius: 7px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 1rem;
+  padding-right: 3rem;
+  margin-left: 10px;
+  margin-right: 10px;
+  /* To bring elements to same line */
+  float:left;
+}
+
+footer button {
+  font-family: myFourthFont;
+  color: #f0efef;
+  background-color:  #ff8480;
+  border: hidden;
+  border-radius: 8px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  font-size: 16px;
+   /* Aligning text to the center */
+  text-align: center;
+}
+
+footer {
+  background-color: #fffd8c;
+  position: relative;
+  padding-left: 6rem;
+  padding-right: 6rem;
+  height: 10rem;
+  width: 89%;
+}
+}
+
+  /* --------------------
+      Mobile Styles
+  ----------------------- */
+  @media only screen and (max-width: 800px){
+    .attr-list {
+      list-style: none;
+      /* Use of flexbox */
+      display: flex;
+      justify-content: space-around;
+      width: 20%;
+      position: relative;
+      top: 10px;
+      left: 5rem;
+     }
+    
+     .content-container {
+      background-color:white;
+      width:350px;
+      height:430px;
+      box-shadow:5px 5px 30px grey;  
+       /* To curve and make a rounded rectangle */
+      border-radius: 15px;
+      padding: 10px 30px 10px 30px;
+      position: relative;
+      margin-left: 2rem;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    #hours {
+      font-family: mySecondFont;
+      font-size: 12px;
+      background-color: white;
+      border: hidden;
+      border-radius: 7px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 1rem;
+      float:left;
+      width: 15%;
+    }
+    
+    #yourcity {
+      font-family: mySecondFont;
+      font-size: 12px;
+      background-color: white;
+      border: hidden;
+      border-radius: 7px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      padding-left: 1rem;
+      padding-right: 3rem;
+      margin-left: 10px;
+      margin-right: 10px;
+      float:left;
+      width: 53%;
+    }
+    
+    footer button {
+      font-family: myFourthFont;
+      color: #f0efef;
+      background-color:  #ff8480;
+      border: hidden;
+      border-radius: 8px;
+      padding-top: 4px;
+      padding-bottom: 4px;
+      padding-left: 6.5rem;
+      padding-right: 6.5rem;
+      font-size: 16px;
+       /* Aligning text to the center */
+      text-align: center;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background-color: #fffd8c;
+      position: relative;
+      padding-left: 6rem;
+      padding-right: 6rem;
+      height: 18rem;
+      width: 65.5%;
+    }
+  }
