@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Contact</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+      </head>
+
+<body>
+  <header>
+        <nav id="nav" class="nav">
+            <!-- Adding logo -->
+            <div class="logo"><img src="images/logo.svg" alt="Logo"></div>
+            <ul class="nav-list">
+                <li class="nav-selected">
+                  <a href="index.html">Home</a>
+                </li>
+                <li class="nav-selected">
+                    <a href="about.html">About</a>
+                  </li>
+                  <li class="nav-selected">
+                    <a href="contact.html">Contact</a>
+                  </li>
+          </nav>
+        </header>
+        
+          <main id="main" class="main">
+              <h1>We Want to Hear From You</h1>
+              <p>If you have an idea for an activity that you think you and your fellow students would love to participate in
+                  that we are not already offering, we want to know about it!</p>
+              <img class="banner-image" src="images/contact-img.svg" alt="contact">
+          <!-- Adding a form-->
+          <form action="thanks.html" method="get">
+            <h2>Contact Us.</h2>
+            <div>
+                <label class="contact-form-label">Full Name</label>
+               <input type="text" id="firstname" name="firstname" placeholder="Full Name" required>
+            </div>
+            <div>
+                <label class="contact-form-label">Student Number</label>
+               <input type="number" id="studentnumber" name="studentnumber" placeholder="Student Number" required>
+            </div>
+            <div>
+                <label class="contact-form-label">Email</label>
+               <input type="text" id="youremail" name="youremail" placeholder="E-mail" required>
+            </div>
+            <div>
+                <label class="contact-form-label">Message</label>
+               <input type="text" id="message" name="message" placeholder="Message" required>
+            </div>
+            <!-- Adding button as "send"-->
+            <button type="submit">SUBMIT</button>
+         </form>
+
+         <section class="location">
+            <h1>Our Location.</h1>
+            <h2>Algonquin College Students' Association</h2>
+              <p>Monday to Friday - 8.30am to 6.00pm<br>
+                1385 Woodroffe Avenue (E114)<br>
+                Ottawa, Ontario<br>
+                K2G 1V8<br>
+                (613) 727-4723 x7711</p>
+          </section>
+
+          <footer>
+            <h5>Follow Us</h5>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-youtube"></a>
+        </footer>
+</body>
+</html>
