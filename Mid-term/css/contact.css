@@ -1,0 +1,238 @@
+html {
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+     
+     /* Adding downloaded font - bold */
+     @font-face {
+        font-family: myFirstFont;
+        src: url("../fonts/Raleway-Bold.ttf");
+      }
+    
+       /* Adding downloaded font - medium */
+    @font-face {
+        font-family: mySecondFont;
+        src: url("../fonts/Raleway-Medium.ttf");
+      }
+    
+         /* Adding downloaded font - medium italic */
+    @font-face {
+        font-family: myThirdFont;
+        src: url("../fonts/Raleway-MediumItalic.ttf");
+      }
+    
+           /* Adding downloaded font - light */
+    @font-face {
+        font-family: myFourthFont;
+        src: url("../fonts/Raleway-Light.ttf");
+      }
+
+      body {
+        line-height: 1.5;
+      }
+
+      header {
+        background-color: #3c3b3a;
+    }
+  
+    header img {
+      max-width: 100px;
+      /* Adding a gap to the left */
+      padding-left: 6rem;
+      margin-left: 0 auto;
+    }
+  
+    nav ul li a {
+      color: white;
+        text-decoration: none;
+    }
+  
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      font-family: mySecondFont;
+    }
+  
+    nav li {
+      display: inline;
+      float: left;
+      padding-left: 3rem;
+      position: relative;
+      left: 75rem;
+      bottom: 5rem;
+    }
+  
+    nav li:hover {
+      font-weight: bolder;
+      font-size: 1.02rem;
+    }
+
+    main p {
+      font-family: myFourthFont;
+      margin-left: 7rem;
+      font-size: 1.5rem;
+    }
+
+    main img {
+      margin-left: 7rem;
+      padding-top: 4rem;
+    }
+
+    h1 {
+        font-family: mySecondFont;
+        font-size: 4rem;
+        color: #3c3b3a;
+        margin-left: 6rem;
+    }
+
+    h2 {
+        font-family: mySecondFont;
+        font-size: 4rem;
+        color: white;
+        text-align: left;
+    }
+
+    label {
+        font-family: mySecondFont;
+        font-size: 1rem;
+        color: white;
+    }
+
+    form {
+        font-size: 10px;
+        text-align: left;
+        background-color: #26a682;
+        width: 25%;
+        border-radius: 2rem;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        padding-left: 5rem;
+        padding-right: 1rem;
+        position: relative;
+        left: 70rem;
+        bottom: 58rem;
+    }
+
+    form h2 {
+      padding-top: -4em;
+      display: block;
+      margin-block-start: 0.83em;
+      margin-block-end: 0.83em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+    }
+
+    #message {
+      padding-bottom: 5rem;
+    }
+
+    .div-container {
+      padding-bottom: 3rem;
+    }
+
+    form button {
+        color: white;
+        font-family: myFourthFont;
+        background-color: #3c3b3a;
+        border: hidden;
+        border-radius: 4rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        font-size: 20px;
+         /* Aligning text to the center */
+        text-align: center;
+        position: relative;
+        left: 3rem;
+      }
+
+      @keyframes hover {
+        0% {background-image: radial-gradient(circle, rgb(0, 236, 98), rgb(21, 209, 131)); transform-origin: top left; transform: rotate(1turn);}
+        25% {transform: scale(1.0);}
+        50% {background-image: radial-gradient(circle, rgb(185, 226, 4), yellow); transform-origin: top right; transform: rotate(1turn);}
+        75% {transform: scale(1.2);}
+        100% {background-image: radial-gradient(circle, yellow, rgb(0, 255, 157));}
+      }
+      
+       /* To change color of button when moving over the button */
+      form button[type=submit]:hover {
+        background-color: #ff8480;
+        color: black;
+        animation-name: hover;
+        animation-duration: 0.6s;
+      /*   animation-direction: forward; */
+        animation-iteration-count: infinite;
+        transition: 0.7s;
+      }
+      
+      form input[type=text] {
+        font-family: mySecondFont;
+        background-color: #f0efef;
+        border: hidden;
+      /* Used to get rounded borders */
+        border-radius: 10px;
+        width: 85%;
+        padding: 12px;
+      /* Making sure that padding and width stays in place */
+        box-sizing: border-box;
+      /* Adding a top margin */
+        margin-top: 6px;
+      /* Adding a bottom margin */
+        margin-bottom: 6px;
+      /* Allows to vertically resize the textarea */
+        resize: vertical;
+      }
+      
+      /* When hovering over the textboxs for name and email, adds a light blue color */
+      form input[type=text]:hover {
+        background-color: #ffe2e2;
+      }
+
+      .location h2 {
+        font-family: myFourthFont;
+        color: black;
+        font-size: 2rem;
+        margin-left: 7rem;
+        margin-top: -3rem;
+      }
+
+      .location h1 {
+        margin-top: -40rem;
+      }
+
+
+    footer {
+        background-color: #3c3b3a;
+        padding-bottom: 4rem;
+      }
+    
+      footer h5 {
+        font-family: myFourthFont;
+        font-size: 1.5rem;
+        text-align: center;
+        color: white;
+        padding-top: 2rem;
+        margin-bottom: -3rem;
+      }
+    
+      footer img {
+        display: inline;
+        padding-left: 1rem;
+        padding-top: 2rem;
+        position: relative;
+        left: 47rem;
+      }
+    
+      .arrow-image {
+        padding-left: 38rem;
+      }
+    
+      footer p {
+        font-family: myFourthFont;
+        color: white;
+        float: right;
+        padding-top: 5rem;
+        padding-right: 5.8rem;
+        font-size: small;
+      }

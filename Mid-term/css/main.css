@@ -3,7 +3,401 @@ html {
     box-sizing: border-box;
   }
 
+     /* Adding downloaded font - bold */
+@font-face {
+    font-family: myFirstFont;
+    src: url("../fonts/Raleway-Bold.ttf");
+  }
+
+   /* Adding downloaded font - medium */
+@font-face {
+    font-family: mySecondFont;
+    src: url("../fonts/Raleway-Medium.ttf");
+  }
+
+     /* Adding downloaded font - medium italic */
+@font-face {
+    font-family: myThirdFont;
+    src: url("../fonts/Raleway-MediumItalic.ttf");
+  }
+
+       /* Adding downloaded font - light */
+@font-face {
+    font-family: myFourthFont;
+    src: url("../fonts/Raleway-Light.ttf");
+  }
+
   body {
     line-height: 1.5;
-    font-family: Arial, Helvetica, sans-serif;
   }
+
+  header {
+      background-color: #3c3b3a;
+  }
+
+  header img {
+    max-width: 80px;
+    /* Adding a gap to the left */
+    padding-left: 12rem;
+    margin-left: 0 auto;
+  }
+
+  nav ul li a {
+    color: white;
+      text-decoration: none;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    font-family: mySecondFont;
+  }
+
+  nav li {
+    display: inline;
+    float: left;
+    padding-left: 3rem;
+    position: relative;
+    left: 75rem;
+    bottom: 4rem;
+  }
+
+  nav li:hover {
+    font-weight: bolder;
+    font-size: 1.02rem;
+  }
+
+  main .home img {
+    max-width: 50%;
+    display: inline;
+    float: right;
+    padding: 3rem;
+    margin-right: 4rem;
+  }
+
+  h1 {
+    font-family: myFirstFont;
+    font-size: 4rem;
+    color: #3c3b3a;
+    margin-left: 6rem;
+  }
+
+  p {
+    font-family: mySecondFont;
+    padding-left: 6rem;
+    font-size: 1.7rem;
+    margin-top: 0;
+  }
+
+  main img {
+      width: 100%;
+  }
+
+  .arrow-image {
+      width: 5%;
+  }
+
+  h2 {
+    font-family: myThirdFont;
+    font-size: 2rem;
+    /* margin-top: 6em;
+    text-align:end;
+    background-color: peachpuff; */
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-family: myFourthFont;
+    font-size: 1.7rem;
+      color: #26a682;
+      padding: 0;
+      margin-top: 0;
+      margin-bottom: 0;
+  }
+
+  .banner-image {
+    width: 40rem;
+    height: 25rem;
+    margin-left: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .about-image {
+    width: 40rem;
+    height: 25rem;
+    margin-left: 6rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .home button {
+        font-family: mySecondFont;
+        background-color: #26a682;
+        border: hidden;
+        border-radius: 2rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 6rem;
+        padding-right: 6rem;
+        font-size: 20px;
+         /* Aligning text to the center */
+        text-align: center;
+        color: white;
+        margin-left: 6rem;
+  }
+  
+  @keyframes hover {
+    0% {background-image: radial-gradient(circle, rgb(0, 236, 98), rgb(21, 209, 131)); transform-origin: top left; transform: rotate(1turn);}
+    25% {transform: scale(1.0);}
+    50% {background-image: radial-gradient(circle, rgb(185, 226, 4), yellow); transform-origin: top right; transform: rotate(1turn);}
+    75% {transform: scale(1.2);}
+    100% {background-image: radial-gradient(circle, yellow, rgb(0, 255, 157));}
+  }
+
+  .home button:hover {
+    animation-name: hover;
+    animation-duration: 0.6s;
+  /*   animation-direction: forward; */
+    animation-iteration-count: infinite;
+    transition: 0.7s;
+  }
+
+   /* To change color of button when moving over the button */
+.home button[type=submit]:hover {
+    color: black;
+  }
+
+    .discoverac {
+        grid-template-areas: 
+        'center left'
+        'center menu'
+        'center right'
+        'center bottom';
+        background-color: rgb(224, 224, 224);
+        display: grid;
+        grid-template-columns: 2fr;
+        grid-template-rows: (repeat(4, 1fr));
+        width: 100%;
+    }
+    
+    .item1 {
+        grid-area: left;
+        margin-left: 5.5rem;
+        padding:0;
+    }
+    
+    .item2 {
+        grid-area: menu;
+        margin-left: 5.5rem;
+    }
+    
+    .item3 {
+        grid-area: center;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .item4 {
+        grid-area: right;
+        margin-right: 4rem;
+        padding-right: 6em;
+    }
+
+    .item5 {
+        grid-area: bottom;
+        padding-left: 40rem;
+        padding-bottom: 2rem;
+    }
+
+    .discoverac button {
+        font-family: myFirstFont;
+        color: white;
+            background-color: #26a682;
+            border: hidden;
+            border-radius: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 3rem;
+            padding-right: 3rem;
+            font-size: 20px;
+            text-align: center;
+    }
+
+    footer {
+      background-color: #3c3b3a;
+      padding-bottom: 2rem;
+    }
+  
+    footer h5 {
+      font-family: myFourthFont;
+      font-size: 1.5rem;
+      text-align: center;
+      color: white;
+      padding-top: 2rem;
+      margin-top: 3rem;
+      margin-bottom: -3rem;
+    }
+  
+    footer img {
+      display: inline;
+      padding-left: 1rem;
+      position: relative;
+      left: 47rem;
+    }
+  
+    .arrow-image {
+      padding-left: 38rem;
+    }
+  
+    footer p {
+      color: white;
+      float: right;
+      padding-top: 5.5rem;
+      padding-right: 4.5rem;
+      font-size: small;
+    }
+
+    .marker-image {
+      width: 5%;
+      padding-left: 45rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem ;
+      transform: rotateX(180deg);
+    }
+
+    main label  {
+      text-align: center;
+      position: relative;
+      left: 46.5rem;
+      top: 10rem;
+      font-family: myFourthFont;
+      font-size: 1rem;
+    }
+
+    .fa-hiking {
+      position: relative;
+      left: 5rem;
+    }
+
+    .fa-heartbeat {
+      position: relative;
+      left: 10rem;
+    }
+
+    .fa-basketball-ball {
+      position: relative;
+      left: 15rem;
+    }
+
+    i {
+      text-align: center;
+      font-size: 3rem;
+  }
+
+  h6 {
+      font-size: 1rem;
+      font-family: myFourthFont;
+      color: #26a682;
+  }
+
+  .icons {
+    padding-bottom: 1em; 
+    padding-left: 8rem;
+    position: relative;
+    right: 2rem;
+  }
+
+  .logo {
+    position: relative;
+    right: 5.5rem;
+  }
+
+
+  .activity {
+    grid-template-areas: 
+    'center left'
+    'center menu'
+    'center right'
+    'center bottom';
+    background-color: rgb(224, 224, 224);
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: (repeat(4, 1fr));
+    width: 100%;
+    margin-bottom: -4rem;
+}
+
+.item6 {
+    grid-area: left;
+    margin-left: 5.5rem;
+    padding:0;
+}
+
+.item7 {
+    grid-area: menu;
+    margin-left: 5.5rem;
+}
+
+.item8 {
+    grid-area: center;
+    max-width: 100%;
+    height: auto;
+}
+
+.item9 {
+    grid-area: right;
+    margin-right: 4rem;
+    padding-right: 6em;
+}
+
+.item10 {
+    grid-area: bottom;
+    padding-left: 40rem;
+    padding-bottom: 2rem;
+}
+
+.activity button {
+    font-family: myFirstFont;
+    color: white;
+        background-color: #26a682;
+        border: hidden;
+        border-radius: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 3rem;
+        padding-right: 3rem;
+        font-size: 20px;
+        text-align: center;
+}
+
+.profile {
+  background-color: #3c3b3a;
+  margin-bottom: -12rem;
+}
+
+.profile p {
+  margin-left: 30rem;
+  margin-right: 6rem;
+  color: white;
+  position: relative;
+  bottom: 15rem;
+}
+
+.profile h4 {
+  font-family: myFourthFont;
+  font-size: 1.5rem;
+  position: relative;
+  left: 20rem;
+  bottom: 6rem;
+  color: white;
+}
+
+.profile-image {
+  width: 10%;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: relative;
+  left: 4rem;
+  top: 4rem ;
+}
