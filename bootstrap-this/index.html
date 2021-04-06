@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Bootstrap</title>
+  </head>
+  <body>
+    <header>
+      <h1 class="display-1 bg-dark text-light pb-3 text-center">Bootstrap!</h1>
+
+      <div class="card text-center">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="true" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Practice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tests</a>
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <h2 class="card-title">Bootstrap 4</h2>
+          <p class="card-text">Newest version of Bootstrap.</p>
+          <a href="#" class="btn btn-info text-light fw-bold">Read More</a>
+        </div>
+      </div>
+      </header>
+
+    <section>
+      <h3 class="p-3 text-primary text-center">Introduction to Bootstrap</h3>
+
+      <div class="row text-center">
+      <div class="col-2 bg-warning p-3">1. About Bootstrap</div>
+      <div class="col-2 bg-primary text-light p-3 fw-bold">2. Layout</div>
+      <div class="col-2 bg-warning p-3">3. Components</div>
+      <div class="col-2 bg-primary text-light p-3 fw-bold">4. Colors</div>
+      <div class="col-2 bg-warning p-3">5. Bootstrap Grids & Navigation</div>
+      <div class="col-2 bg-primary text-light p-3 fw-bold">6. How to use Bootstrap</div>
+      </div>
+    </section>
+
+    <div class="row">
+      <h3 class="p-3 text-dark display-5 fw-bolder">1. About Bootstrap</h3>
+      <div class="col ms-2 alert alert-secondary" role="alert">
+        <p>The browser has some default styles that it uses to display elements like headlines, paragraphs, etc. These are called browser styles. And in addition to that we usually write our own CSS to make our sites look better. The Bootstrap CSS styles are going to go between browser styles and our own styles to provide changes that make things look better.</p>
+      </div>
+      <div class="col ms-2 alert alert-dark" role="alert">
+        <p>One interesting thing about styles is that they use a set of reset commands called reboot. Reboot makes styles consistent across different platforms and browsers. The main difference between reboot and other normalized code is that it uses rems instead of pixels for sizing fonts. That makes it easier to build and customize Bootstrap, as well as our own components. Reboot also keeps style declarations to a minimum because it uses CSS's ability to inherit styles whenever possible. What this is that styles are easier to override than in previous version of the framework.</p>
+      </div>
+      <div class="col ms-2 alert alert-secondary" role="alert">
+        <p>Bootstrap uses a 12-column grid system that has breakpoints for any sizing of devices. The grid is extremely flexible. You can create multiple layouts for different breakpoints, reset, offset, nest, and even customize the order of the columns at different breakpoints. Bootstrap's grid is very powerful. If you can think of a layout, you can build it easily and responsively with the Bootstrap grid. The more time you spend learning how to use it, the easier it will be to get your work done.</p>
+      </div>
+      <div class="text-center">
+      <button type="button" class="btn btn-info btn-lg fw-bold">More Information</button>
+    </div>
+    </div>
+
+    <div class="row">
+    <h3 class="p-3 text-dark display-5 fw-bolder">2. Layout</h3>
+    <ul>
+      <li class="h2 p-3 text-primary">Containers</li>
+      <div class="ms-5">
+      <p>Containers are used to pad the content within a given device or viewport, and there are two container classes available:<br>
+        1. The .container class provides a responsive fixed width container.<br>
+        2. The .container-fluid class provides a full width container, spanning the entire width of the viewport.
+      </p>
+      </div>
+      <div class="img-fluid img-thumbnail">
+      <img src="images/Capture.JPG" class="card-img-top" alt="Containers">
+    </div>
+
+    <div>
+      <li class="h2 p-3 text-primary">Breakpoints</li>
+      <p class="ms-5">
+        Breakpoints are customizable widths that determine how your responsive layout behaves across device or viewport sizes in Bootstrap.
+      </p>
+      <h1 class="h5 ms-5">
+        Core concepts
+      </h1>
+      <ul class="ms-5">
+        <li>Breakpoints are the building blocks of responsive design. Use them to control when your layout can be adapted at a particular viewport or device size.</li>
+        <li>Use media queries to architect your CSS by breakpoint. Media queries are a feature of CSS that allow you to conditionally apply styles based on a set of browser and operating system parameters. We most commonly use min-width in our media queries.</li>
+        <li>Mobile first, responsive design is the goal. Bootstrap’s CSS aims to apply the bare minimum of styles to make a layout work at the smallest breakpoint, and then layers on styles to adjust that design for larger devices. This optimizes your CSS, improves rendering time, and provides a great experience for your visitors.</li>
+      </ul>
+      <div class="img-fluid img-thumbnail">
+        <img src="images//Capture2.JPG" class="card-img-top" alt="Breakpoints">
+      </div>
+    </div>
+
+      <li class="h2 p-3 text-primary ">Columns</li>
+      <p class="ms-5">
+        Learn how to modify columns with a handful of options for alignment, ordering, and offsetting thanks to our flexbox grid system. Plus, see how to use column classes to manage widths of non-grid elements.
+      </p>
+      <h1 class="h5 ms-5">
+        How they work
+      </h1>
+      <ul class="ms-5">
+        <li>Columns build on the grid’s flexbox architecture. Flexbox means we have options for changing individual columns and modifying groups of columns at the row level. You choose how columns grow, shrink, or otherwise change.</li>
+        <li>When building grid layouts, all content goes in columns. The hierarchy of Bootstrap’s grid goes from container to row to column to your content. On rare occasions, you may combine content and column, but be aware there can be unintended consequences.
+        </li>
+        <li>Bootstrap includes predefined classes for creating fast, responsive layouts. With six breakpoints and a dozen columns at each grid tier, we have dozens of classes already built for you to create your desired layouts. This can be disabled via Sass if you wish.</li>
+        <li>
+          Find out more about <a href="https://getbootstrap.com/docs/5.0/layout/columns/" class="link-primary">Columns.</a>
+        </li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <h3 class="p-3 text-dark display-5 fw-bolder">3. Components</h3>
+    <ul>
+      <li class="h2 p-3 text-secondary">List group</li>
+      <ul class="list-group col-2 ms-5">
+        <li class="list-group-item">An item</li>
+        <li class="list-group-item">A second item</li>
+        <li class="list-group-item">A third item</li>
+        <li class="list-group-item">A fourth item</li>
+        <li class="list-group-item">And a fifth one</li>
+      </ul>
+      <li class="h2 p-3 text-secondary">Breadcrumb</li>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item active ms-5" aria-current="page">Home</li>
+        </ol>
+      </nav>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item ms-5"><a href="#">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Practice</li>
+        </ol>
+      </nav>
+      
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item ms-5"><a href="#">Home</a></li>
+          <li class="breadcrumb-item"><a href="#">Practice</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Tests</li>
+        </ol>
+      </nav>
+      <li class="h2 p-3 text-secondary">Dropdowns</li>
+<div class="btn-group ms-5">
+  <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown Primary
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Item 1</a></li>
+    <li><a class="dropdown-item" href="#">Item 2</a></li>
+    <li><a class="dropdown-item" href="#">Item 3</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated item</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown Secondary
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Item 1</a></li>
+    <li><a class="dropdown-item" href="#">Item 2</a></li>
+    <li><a class="dropdown-item" href="#">Item 3</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated item</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown Success
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Item 1</a></li>
+    <li><a class="dropdown-item" href="#">Item 2</a></li>
+    <li><a class="dropdown-item" href="#">Item 3</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated item</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown Info
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Item 1</a></li>
+    <li><a class="dropdown-item" href="#">Item 2</a></li>
+    <li><a class="dropdown-item" href="#">Item 3</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated item</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown Warning
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Item 1</a></li>
+    <li><a class="dropdown-item" href="#">Item 2</a></li>
+    <li><a class="dropdown-item" href="#">Item 3</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated item</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown Danger
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Item 1</a></li>
+    <li><a class="dropdown-item" href="#">Item 2</a></li>
+    <li><a class="dropdown-item" href="#">Item 3</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated item</a></li>
+  </ul>
+</div>
+<div class="btn-group">
+  <button type="button" class="btn btn-dark text-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+    Dropdown Dark
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="#">Item 1</a></li>
+    <li><a class="dropdown-item" href="#">Item 2</a></li>
+    <li><a class="dropdown-item" href="#">Item 3</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li><a class="dropdown-item" href="#">Separated item</a></li>
+  </ul>
+</div>
+
+      <li class="h2 p-3 text-secondary">Close button</li>
+      <p class="ms-5 h6">Learn more about how to create the <a href="https://getbootstrap.com/docs/5.0/components/close-button/" class="link-primary">Close button.</a></p>
+      <button type="button" class="btn-close ms-5 bg-warning" aria-label="Close"></button>
+    </ul>
+  </div>
+
+  <div class="row">
+    <h3 class="p-3 text-dark display-5 fw-bolder">4. Colors</h3>
+    <p class="h5 ms-2">There are some theme colors on Bootstrap to differentiate between themes like warning, danger or dark theme for example.<br> 
+      Below mentioned are the theme colors:</p>
+    <ul class="col">
+      <li class="bg-primary display-6 p-3 text-center">Primary - Use class "bg-primary"</li>
+      <li class="bg-secondary display-6 p-3 text-center">Secondary - Use class "bg-secondary"</li>
+      <li class="bg-success display-6 p-3 text-center">Success - Use class "bg-success"</li>
+      <li class="bg-danger display-6 p-3 text-center">Danger - Use class "bg-danger"</li>
+      <li class="bg-warning display-6 p-3 text-center">Warning - Use class "bg-warning"</li>
+      <li class="bg-info display-6 p-3 text-center">Info - Use class "bg-info"</li>
+      <li class="bg-light display-6 p-3 text-center">Light - Use class "bg-light"</li>
+      <li class="bg-dark display-6 text-light p-3 text-center">Dark - Use class "bg-dark"</li>
+    </ul>
+  </div>
+
+  <div class="row">
+    <h3 class="p-3 text-dark display-5 fw-bolder">5. Bootstrap Grids & Navigation</h3>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card">
+          <img src="images/arnold-francisca-f77Bh3inUpE-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Navigations</h5>
+            <p class="card-text">Navigation is a section of a graphical UI for individuals to source around in accessing information. Research more about <a href="https://getbootstrap.com/docs/5.0/components/navs-tabs/" class="link-danger">Navigation Components.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/christopher-gower-m_HRfLhgABo-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Grids</h5>
+            <p class="card-text">Bootstrap has inbuilt mobile-first in its classes, and the flexbox grids to build anything you've already imagined because of the twelve column system bootstrap is responsive to. Find out more about <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" class="link-danger">flexbox.</a></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/joshua-reddekopp-GkFQEOubrCo-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cards</h5>
+            <p class="card-text">Bootstrap Cards are flexible & extensible content container with multiple options. Read about <a href="https://getbootstrap.com/docs/5.0/components/card/#sizing" class="link-danger">cards.</a> And you'll be amazed about how it's easy to use.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card">
+          <img src="images/nasa-Q1p7bh3SHj8-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Alerts</h5>
+            <p class="card-text">It's a way to provide feedbacks in a flexible manner but as an alert. Such as Warning, Danger, Primary, Dark, etc.. Get to know more about <a href="https://getbootstrap.com/docs/5.0/components/alerts/" class="link-danger">Alerts.</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <h3 class="p-3 text-dark display-5 fw-bolder">6. How to use Bootstrap</h3>
+    <div class="ms-4 fw-bolder text-secondary">
+      <ul class="b-2">
+    <li>Click the following link to open Bootstrap: <a href="https://getbootstrap.com/" class="link-danger">Bootstrap</a></li>
+    <li>Click on "Get Started" v5.0.0-beta3</li>
+    <li>Scroll down and copy the code under "Starter template"</li>
+    <li>Paste the copied code on you html page on Visual Studio Code.</li>
+    <li>Start coding using classes on your html itself. Search query on Bootstrap will show you all the relevant classes on your search.</li>
+    </ul>
+    <p class="display-4 text-center bg-warning pt-3 pb-3">Information Sourced from: <a href="https://getbootstrap.com/" class="link-danger">https://getbootstrap.com/</a></p>
+  </div>
+</div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+  </body>
+</html>
