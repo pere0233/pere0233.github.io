@@ -1,0 +1,85 @@
+html {
+    font-size: 14px;
+    box-sizing: border-box;
+  }
+
+   /* Adding downloaded font - bold */
+@font-face {
+    font-family: myFirstFont;
+    src: url("../fonts/DAYROM__.ttf");
+  }
+
+   /* Adding downloaded font - medium */
+@font-face {
+    font-family: mySecondFont;
+    src: url("../fonts/British\ Shorthair.otf");
+  }
+
+  body {
+    line-height: 1.5;
+  }
+
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    font-family: myFirstFont;
+    text-transform: uppercase;
+  }
+
+  nav li {
+    display: inline;
+  }
+
+  ul {
+    position: fixed;
+    top: 5rem;
+    width: 100%;
+    left: 20rem;
+    background-color: #FFCDCD;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  nav a {
+    text-decoration: none;
+    color: black;
+    padding: 2rem;
+    font-size: 1.5rem;
+  }
+
+  nav button{
+      background-color: black;
+      color: white;
+      font-family: myFirstFont;
+      text-transform: uppercase;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+      font-size: 1.5rem;
+      margin-left: 3rem;
+  }
+
+  h1{
+    font-family: mySecondFont;
+    font-size: 5rem;
+  }
+
+  p{
+    font-family: myFirstFont;
+    font-size: 2rem;
+  }
+
+  .header-image1 {
+    width: 53rem;
+  }
+
+  .header-image2 {
+      width: 54.10rem;
+      height: 20%;
+      object-fit: contain;
+  }
+
+  .header-image3 {
+    width: 54.10rem;
+}
