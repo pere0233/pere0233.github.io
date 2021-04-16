@@ -4,6 +4,7 @@ Brief description on how the web portfolio was created.
 - Services tab displays the services I provide for my clients and details about my previous work.
 - Experience page contains information about myself and the qualifications to further with.
 - Contact tab is for the clients to contact me to ask further about my business and to further about the neccessary requirements.
+- Written HTML and CSS validated.
 
 Challenges faced during development.
 - Time Management.
