@@ -83,3 +83,9 @@ html {
   .header-image3 {
     width: 54.10rem;
 }
+
+footer {
+  background-color: #FFCDCD;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}

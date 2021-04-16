@@ -10,7 +10,7 @@ Challenges faced during development.
 - Time Management.
 - Whether to use bootstrap or CSS format.
 - Started on bootstrap but got confused in the process, and started new on the html and cs method.
-- Completed on the HTML and took time on CSS designing.
+- Completed on the HTML and took time on CSS designing and attached a slight coding of bootstrap as well.
 
 How I overcame those changes.
 - Changed my path to CSS and started working on the project.

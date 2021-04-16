@@ -30,11 +30,7 @@ html {
     display: inline;
   }
 
-  ul {
-    position: fixed;
-    top: 5rem;
-    width: 100%;
-    left: 20rem;
+  .container-fluid, footer {
     background-color: #FFCDCD;
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -47,18 +43,6 @@ html {
     font-size: 1.5rem;
   }
 
-  nav button{
-      background-color: black;
-      color: white;
-      font-family: myFirstFont;
-      text-transform: uppercase;
-      padding-left: 2rem;
-      padding-right: 2rem;
-      padding-top: 0.25rem;
-      padding-bottom: 0.25rem;
-      font-size: 1.5rem;
-      margin-left: 3rem;
-  }
 
   h1{
     font-family: mySecondFont;
@@ -99,4 +83,8 @@ html {
 .home {
   position: relative;
   bottom: 25rem;
+}
+
+.dropdown-item {
+  font-family: myFirstFont;
 }

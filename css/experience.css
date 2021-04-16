@@ -91,3 +91,9 @@ html {
 .header-image1 {
   width: 50%;
 }
+
+footer {
+  background-color: #FFCDCD;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
